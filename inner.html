@@ -58,37 +58,57 @@
         </ul>
         <section class="filters">
             <h2>Фильтр:</h2>
-            <form action="" method="post">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
                 <legend>Цена:</legend>
-                  0<input type="range"  min="0" max="30 000" id="" name="">30 0000
+                  <span>0</span>
+                  <input type="range"  class="range-control" min="0" max="30000" step="1000" id="" name="price-range">
+                  <span>30 0000</span>
                   <p>
-                    <output id="" name="">0</output>
-                    <span> - </span>
-                    <output id="" name="">30 000</output>
+                  <input type="text" class="range-control from" name="price-range from" value="0">
+                  <span> - </span>
+                  <input type="text" class="range-control to"  name="price-range to" value="30000">
                   </p>
               </fieldset>
               <fieldset>
-                <legend>Производители</legend>
-                <input type="checkbox" name="brand" id="bosh">
-                <label for="bosh">bosh</label>
-                <input type="checkbox" name="brand" id="interskol">
-                <label for="interskol">ИНТЕРСКОЛ</label>
-                <input type="checkbox" name="brand" id="makita">
-                <label for="makita">makita</label>
-                <input type="checkbox" name="brand" id="dewalt">
-                <label for="dewalt">dewalt</label>
-                <input type="checkbox" name="brand" id="hitachi">
-                <label for="hitachi">hitachi</label>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="brand" id="filter-bosh" value="bosh" checked>
+                    <label for="filter-bosh">bosh</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="brand" id="filter-interskol" value="interskol">
+                    <label for="filter-interskol">интерскол</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="brand" id="filter-makita" value="makita" checked>
+                    <label for="filter-makita">makita</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="brand" id="filter-dewalt" value="dewalt">
+                    <label for="filter-dewalt">dewalt</label>
+                  </li>
+                  <li class="filter-option">
+                    <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="brand" id="filter-hitachi" value="hitachi">
+                    <label for="filter-hitachi">hitachi</label>
+                  </li>
+                </ul>
               </fieldset>
               <fieldset>
-                <legend>Питание</legend>
-                <input type="radio" id="" name="">
-                <label for="">Аккумуляторные</label>
-                <input type="radio" id="" name="">
-                <label for="">Сетевые</label>
+                <legend>Питание:</legend>
+                <ul>
+                <li class="filter-option">
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio"  id="filter-battery" name="charging" value="battery" checked>
+                  <label for="filter-battery">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio" id="filter-mains-supply" name="charging" value="mains-supply">
+                  <label for="filter-mains-supply">Сетевые</label>
+                </li>
+                </ul>
               </fieldset>
-              <button type="submit" id="" name="">Показать</button>
+              <button type="submit" class="filter-button">Показать</button>
             </form>
             <!--Здесь будет фильтр товаров, сделать UL -->
         </section>
