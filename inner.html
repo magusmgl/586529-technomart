@@ -14,9 +14,9 @@
         <div class="shopping control">
           <label for="search-items">Поиск:</label>
           <input type="search" name="search-items" id="search-items">
-          <a class="bookmarks">Закладки: <span class="bookmarks-count">0</span></a>
-          <a class="basket">Корзина: <span span class="bookmarks-count">10</span></a>
-          <a class="place-order">Оформить заказ</a>
+          <a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a>
+          <a class="basket" href="#">Корзина: <span span class="bookmarks-count">10</span></a>
+          <a class="place-order" href="#">Оформить заказ</a>
         </div>
         <h1>Интерет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="header-contacts">
@@ -57,8 +57,40 @@
             <li class="curent-breadcrumb">ПЕРФОРАТОРЫ</li>
         </ul>
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--Здесь будет фильтр товаров -->
+            <h2>Фильтр:</h2>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Цена:</legend>
+                  0<input type="range"  min="0" max="30 000" id="" name="">30 0000
+                  <p>
+                    <output id="" name="">0</output>
+                    <span> - </span>
+                    <output id="" name="">30 000</output>
+                  </p>
+              </fieldset>
+              <fieldset>
+                <legend>Производители</legend>
+                <input type="checkbox" name="brand" id="bosh">
+                <label for="bosh">bosh</label>
+                <input type="checkbox" name="brand" id="interskol">
+                <label for="interskol">ИНТЕРСКОЛ</label>
+                <input type="checkbox" name="brand" id="makita">
+                <label for="makita">makita</label>
+                <input type="checkbox" name="brand" id="dewalt">
+                <label for="dewalt">dewalt</label>
+                <input type="checkbox" name="brand" id="hitachi">
+                <label for="hitachi">hitachi</label>
+              </fieldset>
+              <fieldset>
+                <legend>Питание</legend>
+                <input type="radio" id="" name="">
+                <label for="">Аккумуляторные</label>
+                <input type="radio" id="" name="">
+                <label for="">Сетевые</label>
+              </fieldset>
+              <button type="submit" id="" name="">Показать</button>
+            </form>
+            <!--Здесь будет фильтр товаров, сделать UL -->
         </section>
         <section class="sort-product">
             <h2 class="visually-hidden">Сортировка товаров</h2>
