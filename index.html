@@ -15,7 +15,7 @@
             <label for="search-items">Поиск:</label>
             <input type="search" name="search-items" id="search-items">
             <a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a>
-            <a class="basket" href="#">Корзина: <span span class="bookmarks-count">0</span></a>
+            <a class="basket" href="#">Корзина: <span class="bookmarks-count">0</span></a>
             <a class="place-order" href="#">Оформить заказ</a>
         </div>
         <h1>Интерет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -73,8 +73,10 @@
                         Настоящие мужские игрушки
                     </b>
                 </p>
-                <span class="back-slide"></span>
-                <span class="next-slide"></span>
+                <button type="button" class="button back-slide back-slide-arrow">Назад</button>
+                <button type="button" class="button next-slide next-slide-arrow">Вперед</button>
+                <button type="button" class="button back-slide back-slide-radio">Назад</button>
+                <button type="button" class="button next-slide next-slide-radio">Вперед</button>
                 <a class="coomon-button" href="inner.html">Открыть каталог</a>
             </div>
             <div class="sliedr-item">
@@ -83,8 +85,10 @@
                       Соседям на радость!
                     </b>
                 </p>
-                <span class="back-slide"></span>
-                <span class="next-slide"></span>
+                <button type="button" class="button back-slide back-slide-arrow">Назад</button>
+                <button type="button" class="button next-slide next-slide-arrow">Вперед</button>
+                <button type="button" class="button back-slide back-slide-radio">Назад</button>
+                <button type="button" class="button next-slide next-slide-radio">Вперед</button>
                 <a class="coomon-button" href="inner.html">Открыть каталог</a>
             </div>
         </section>
@@ -305,27 +309,34 @@
     </footer>
     <section class="modal modal-writeus">
         <h2 class="visually-hidden">Форма для обратной связи</h2>
-        <form action="" method="POST">
-            <label for="username">Ваше имя:</label>
-            <input type="text" id="username" name="name" placeholder="Имя Фамилия" required>
-            <label for="email">Ваш e-mail</label>
-            <input type="email" id="email" name="e-mail" placeholder="email@example.com" required>
-            <label for="letter">Текст письма</label>
-            <textarea cols="50" rows="8" id="letter" name="feedback" placeholder="В свободной форме" required></textarea>
+        <form action="https://echo.htmlacademy.ru" method="get" class="feedback-form">
+            <p class="feedback-item>
+              <label for="username">Ваше имя:</label>
+              <input type="text" id="username" name="name" placeholder="Имя Фамилия" required>
+            </p>
+            <p class="feedback-item>
+              <label for="email">Ваш e-mail</label>
+              <input type="email" id="email" name="e-mail" placeholder="email@example.com" required>
+            </p>
+            <p class="feedback-item>
+              <label for="letter">Текст письма</label>
+              <textarea cols="50" rows="8" id="letter" name="feedback" placeholder="В свободной форме" required></textarea>
+            </p>
             <button type="submit">Отправить</button>
         </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Подробная карта как до нас добраться</h2>
         <img src="img/big_map.jpg" width="940" height="446" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 на карте">
-        <span class="modal-close">Х</span>
+        <button  class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-putitem">
         <h2 class="visually-hidden">Добавление товара в корзину</h2>
         <p>Товар добавлен в корзину!</p>
         <a class="common-button">Оформить заказ</a>
         <button type="button">Продолжить покупки</button>
-        <span class="modal-close">X</span>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 
