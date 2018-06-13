@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: ;
+  background-image: url("") ;
+  background-repeat: ;
+  background-position: ;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: rgb(255, 255, 255);
+  vertical-align: center;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.common-button {
+  background-color: rgb(238, 54, 67)
+}
+
+.common-button:hover,
+.common-button:focus {
+  background-color: rgb(202, 44, 55);
+}
+
+.common-button:active {
+  background-color: rgb(186, 39, 50);
+}
+
+.promo-button {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-button:hover,
+.promo-button:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.promo-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-buy {
+  background-color: rgb(99, 166, 62);
+}
+.button-buy:hover,
+.button-buy:focus {
+  background-color: rgb(95, 187, 45);
+}
+.button-buy:active {
+  background-color: rgb(81, 133, 52);
+}
+
+.button-bookmark {
+  color:#32425c;
+}
+.button-bookmark:hover,
+.button-bookmark:focus {
+
+}
+.button-bookmark:active {}
+
+.header-logo {
+
+}
+
+
+
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(50, 66, 92);
+}
+
+.site-navigation,
+catalog-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+catalog-navigation a {
+  color: #ffffff;
+
