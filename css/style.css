@@ -2,9 +2,10 @@
         margin: 0;
         padding: 0;
         font-family: "Cuprum", "PT Sans", sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
+        font-weight: normal;
+        /*font-size: 14px;
+
+        line-height: 18px;  может убрать?*/
         text-transform: none;
         color: #000000;
         background-color: rgb(255, 255, 255);
@@ -13,6 +14,7 @@
     a {
         text-decoration: none;
     }
+    /*ok*/
     
     .header-logo,
     .footer-logo {
@@ -20,34 +22,17 @@
         box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     }
     
-    .main-header {
-        background-color: rgb(244, 247, 249);
-    }
-    
-    .button,
-    button {
-        font: inherit;
-        font-size: 14px;
-        text-align: center;
-        color: rgb(255, 255, 255);
-        line-height: 18px;
-        vertical-align: center;
-        text-transform: uppercase;
-        border: none;
-    }
-    
-    .common-button,
-    button {
-        background-color: rgb(238, 54, 67)
-    }
-    
-    .common-button:hover,
-    .common-button:focus {
+    .header-logo a:focus,
+    .header-logo a:hover {
         background-color: rgb(202, 44, 55);
     }
     
-    .common-button:active {
+    .header-logo:active {
         background-color: rgb(186, 39, 50);
+    }
+    
+    .main-header {
+        background-color: rgb(244, 247, 249);
     }
     
     .promo-button {
@@ -56,7 +41,6 @@
         text-decoration: none;
         color: rgb(255, 255, 255);
         text-align: center;
-        vertical-align: middle;
         background-color: rgba(0, 0, 0, 0.1);
     }
     
@@ -68,155 +52,246 @@
     .promo-button:active {
         background-color: rgba(0, 0, 0, 0.3);
     }
-    
+    /*
+    .button,
+    button {
+        font: inherit;
+        font-size: 14px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        line-height: 18px;
+        vertical-align: center;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .common-button,
+    button {
+        background-color: rgb(238, 54, 67)
+    }
+
+    .common-button:hover,
+    .common-button:focus {
+        background-color: rgb(202, 44, 55);
+    }
+
+    .common-button:active {
+        background-color: rgb(186, 39, 50);
+    }
+
+
     .button-buy {
         background-color: rgb(99, 166, 62);
     }
-    
+
     .button-buy:hover,
     .button-buy:focus {
         background-color: rgb(95, 187, 45);
     }
-    
+
     .button-buy:active {
         background-color: rgb(81, 133, 52);
     }
-    
+
     .button-bookmark {
         color: #32425c;
     }
+    */
     
     .shopping-control {
         font-size: 17px;
+        text-align: left;
         line-height: 18px;
-        font-weight: 400;
         color: rgb(255, 255, 255);
         background-color: rgb(41, 52, 73);
     }
+    /*ok*/
     
-    .search-form input {
-        border: none;
+    .search-form input[type="search"] {
+        color: rgb(255, 255, 255);
         background-color: rgb(41, 52, 73);
+        border: none;
     }
+    /*ol*/
     
     .shopping-control a {
         color: rgb(255, 255, 255);
     }
+    /*ok*/
     
-    .main-header a:hover,
-    .main-header a:focus,
-    .main-header input:hover {
+    .shopping-control .bookmarks:hover,
+    .shopping-control .basket:hover,
+    .shopping-control input:hover {
         background-color: rgb(33, 42, 58);
     }
+    /*ok*/
     
-    .main-header a:active {
-        color: rgb(255, 255, 255);
+    .shopping-control .bookmarks:active,
+    .shopping-control .basket:active {
+        color: rgba(255, 255, 255, 0.5);
         background-color: rgb(22, 29, 41);
     }
+    /*ok*/
     
     .main-header input:focus {
         background-color: #ffffff;
     }
+    /*ok*/
     
     .shopping-control .place-order {
         background-color: rgb(99, 166, 62);
     }
+    /*ok*/
     
-    .shopping-control .place-order:hover,
-    .shopping-control .place-order:focus {
+    .shopping-control .place-order:hover {
         background-color: rgb(95, 187, 45)
     }
+    /*ok*/
     
     .shopping-control .place-order:active {
+        color: rgba(255, 255, 255, 0.5);
         background-color: rgb(81, 133, 52);
     }
+    /*ok*/
     
     .main-header h1 {
         font-size: 16px;
-        font-weight: normal;
         font-style: italic;
         line-height: 23px;
         text-align: left;
         color: rgb(238, 54, 67);
     }
+    /*ok*/
     
     .header-contacts .phone {
         font-size: 21px;
-        font-weight: normal;
-        font-style: normal;
+        letter-spacing: 0.4px;
         line-height: 21px;
         text-align: left;
         color: rgb(238, 54, 67);
         border: solid 3px rgb(255, 255, 255);
     }
+    /*ok*/
     
-    .header-contacts p {
+    .header-contacts .address {
         font-size: 14px;
-        font-weight: 400;
         line-height: 24px;
         text-align: center;
         color: rgb(50, 66, 92);
     }
+    /*ok*/
     
-    .user-sign-out {
+    .user-sign-out,
+    .main-navigation-site {
         list-style: none;
     }
-    
-    .user-sign-out li a {
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 21px;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-    }
+    /* ok*/
     
     .main-navigation {
         font-size: 17px;
         line-height: 17px;
         color: rgb(255, 255, 255);
-        box-shadow: inset 0 -5px 0 rgb(41, 52, 73);
         background-color: rgb(50, 66, 92);
+        box-shadow: inset 0 -5px 0 rgb(41, 52, 73);
     }
+    /*ok*/
     
-    .site-navigation,
-    .catalog-navigation {
-        list-style: none;
-    }
-    
-    .site-navigation a,
+    .main-navigation-site a,
     .catalog-navigation a {
         color: #ffffff;
     }
+    /*ok*/
     
-    .promo-section ul {
+    .main-navigation-site a:hover,
+    .main-navigation-site a:focus {
+        background-color: rgb(41, 52, 73);
+    }
+    /*ok*/
+    
+    .main-navigation-site a:active {
+        color: rgba(255, 255, 255, 0.5);
+        background-color: rgb(29, 39, 57);
+    }
+    /*ok*/
+    
+    .user-sign-out a {
+        font-size: 21px;
+        text-align: left;
+        line-height: 21px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    /*ok*/
+    
+    .user-sign-out li a:hover {
+        color: rgb(238, 54, 67);
+    }
+    /*ok*/
+    
+    .user-sign-out li a:active {
+        color: rgba(0, 0, 0, 0.3)
+    }
+    /*ok*/
+    
+    .promo-list {
         list-style: none;
     }
+    /*ok*/
     
-    .promo-section h3 {
+    .promo-list h3 {
         font-size: 24px;
         font-weight: bold;
         color: rgb(255, 255, 255);
         line-height: 30px;
     }
+    /*ok*/
     
-    .promo-section li:nth-child(1) {
+    .promo-list li:nth-child(1) {
         background-color: rgb(255, 191, 71);
     }
     
-    .promo-section li:nth-child(2) {
+    .promo-list li:nth-child(2) {
         background-color: rgb(59, 188, 227);
     }
     
-    .promo-section li:nth-child(3) {
+    .promo-list li:nth-child(3) {
         background-color: rgb(220, 145, 216);
     }
     
-    .promo-section li:nth-child(4) {
+    .promo-list li:nth-child(4) {
         background-color: rgb(142, 215, 143);
     }
     
-    .promo-section li:nth-child(5) {
+    .promo-list li:nth-child(5) {
         background-color: rgb(255, 192, 71);
+    }
+    /*ok*/
+    
+    .slider-sign {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        opacity: 0.25;
+    }
+    
+    .slider-sign b {
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 36px;
+    }
+    /*ok*/
+    
+    .slider-sign span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    /*ok*/
+    
+    .slider-item {
+        background-color: rgb(86, 86, 86);
+        background-image: url("/img/promo_slaider1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
     .popular-index {
@@ -235,9 +310,13 @@
         list-style: none;
     }
     
-    .popular-items list .product {
+    .popular-items-list li {
         background-color: rgb(255, 255, 255);
-        border: solid 1px rgb(234, 234, 234);
+        border: solid 1px rgb(229, 229, 229);
+    }
+    
+    .popular-items-list li:hover {
+        box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
     }
     
     .product h3 {
@@ -261,9 +340,18 @@
         list-style: none;
     }
     
-    .popular-producers card .producers {
+    .popular-producers-card li {
         background-color: rgb(255, 255, 255);
-        border: solid 1px rgb(234, 234, 234);
+        border: solid 1px rgb(229, 229, 229);
+    }
+    
+    .popular-producers-card li:hover {
+        box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+    }
+    
+    .popular-producers-card li:active {
+        opacity: 0.3;
+        box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
     }
     
     .service {
@@ -344,6 +432,17 @@
         color: rgb(255, 209, 128);
     }
     
+    .site-navigation a:hover,
+    .catalog-navigation a:hover {
+        border-bottom: 2px solid;
+    }
+    
+    .site-navigation a:active,
+    .catalog-navigation a:active {
+        opacity: 0.5;
+        border: none;
+    }
+    
     .footer-down {
         background-color: rgb(41, 52, 73);
     }
@@ -359,9 +458,27 @@
         list-style: none;
     }
     
+    .footer-social li {
+        background-color: rgb(33, 42, 58);
+    }
+    
+    .footer-social li:hover,
+    .footer-social li:active {
+        background-color: rgb(238, 54, 67);
+    }
+    
     .footer-down a {
         text-decoration: none;
         color: rgb(255, 209, 128);
+    }
+    
+    .footer-down a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-down a:active {
+        color: rgb(238, 54, 67);
+        text-decoration: none;
     }
     
     .modal-modal-writeus {
