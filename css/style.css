@@ -1,3 +1,9 @@
+    html,
+    body {
+        min-width: 1200px ;
+        min-height: 3151px;        
+    }
+    
     body {
         margin: 0;
         padding: 0;
@@ -14,10 +20,23 @@
     
     .header-logo,
     .footer-logo {
+        width: 220px;
+        text-align: center;
         background-color: rgb(238, 54, 67);
         box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+        /*Времено для сетки*/outline: 2px solid rgb(21, 255, 0);
+    }
+
+    
+    .header-logo {
+        height: 47px;
     }
     
+    .footer-logo {
+        height: 68px;
+    }
+
     .header-logo a:focus,
     .header-logo a:hover {
         background-color: rgb(202, 44, 55);
@@ -28,7 +47,17 @@
     }
     
     .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: rgb(244, 247, 249);
+        margin-bottom: 59px;
+        
+        
+        /*Времено для сетки*/
+        min-height: 320px;
+        
+        outline: 2px solid red;
     }
     
     .promo-button {
@@ -107,13 +136,29 @@
         border: 3px solid rgb(50, 66, 92);
         opacity: 0.3;
     }
+
+
+    .control-wrapper {
+        widows: 100%;
+        margin-bottom:  46px;
+        /*Времено для сетки*/
+ outline: 2px solid #00ff15;
+    }
     
-    .shopping-control {
+    
+
+   
+
+    .shopping-control {     
+        
+        width: 730px;
         font-size: 17px;
         text-align: left;
         line-height: 18px;
         color: rgb(255, 255, 255);
         background-color: rgb(41, 52, 73);
+
+        /*Времено для сетки*/outline: 2px solid rgb(140, 0, 255);
     }
     
     .search-form input[type="search"] {
@@ -121,7 +166,7 @@
         background-color: rgb(41, 52, 73);
         border: none;
     }
-    /*ol*/
+    
     
     .shopping-control a {
         color: rgb(255, 255, 255);
@@ -156,15 +201,23 @@
         background-color: rgb(81, 133, 52);
     }
     
-    .main-header h1 {
+    .name-site {
+        width: 196px;
+        height: 60px;
+    }
+    .name-site h1 {
         font-size: 16px;
         font-style: italic;
         line-height: 23px;
         text-align: left;
         color: rgb(238, 54, 67);
+        margin: 0;
     }
     
+   
     .header-contacts .phone {
+        width: 270px;
+        height: 45px;
         font-size: 21px;
         letter-spacing: 0.4px;
         line-height: 21px;
@@ -174,6 +227,8 @@
     }
     
     .header-contacts .address {
+        width: 250px;
+        height: 13px;
         font-size: 14px;
         line-height: 24px;
         text-align: center;
@@ -184,10 +239,24 @@
     .navigation-site,
     .user-sign-in,
     .user-control {
+        margin: 0;
+        padding: 0;
         list-style: none;
+    }
+     
+    .user-sign-out {
+        display: flex;
+    }
+
+    .navigation-site {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch
     }
     
     .main-navigation {
+        width: 940px;
+        height: 60px;
         font-size: 17px;
         line-height: 17px;
         color: rgb(255, 255, 255);

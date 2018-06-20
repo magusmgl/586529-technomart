@@ -12,10 +12,11 @@
 
 <body>
     <header class="main-header">
-        <div class="header-logo">
+        <div class="control-wrapper">
+          <div class="header-logo">
             <img src="img/logo-main.png" width="111" height="18" alt="Логотип магазина Техномарт">
-        </div>
-        <div class="shopping-control">
+          </div>
+          <div class="shopping-control">
             <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
                 <label for="search-items" class="visually-hidden">Поиск:</label>
                 <input type="search" name="search-items" id="search-items" value="Поиск:">
@@ -23,16 +24,24 @@
             <a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a>
             <a class="basket" href="#">Корзина: <span class="bookmarks-count">0</span></a>
             <a class="place-order" href="#">Оформить заказ</a>
+          </div>
         </div>
-        <h1 class="visually-hidden">Интерет-магазин строительных материалов и инструментов для ремонта</h1>
+            
+        <div class="name-site">
+           <h1 class="visually-hidden">Интерет-магазин строительных материалов и инструментов для ремонта</h1>
+        </div>
+        
         <div class="header-contacts">
             <span class="phone">+7 (812) 555-05-555</span>
             <span class="address">г. Санкт-Петербург, ул. Б. Конющенная, д.19/8</span>
         </div>
+
         <ul class="user-sign-out">
             <li class="login-link"><a href="#">Войти</a></li>
             <li class="registration-link"><a href="#">Регистрация</a></li>
-        </ul>
+        </ul>     
+        
+        
         <nav class="main-navigation">
             <ul class="main navigation-site">
                 <li><a href="index.html">Главная</a></li>
@@ -44,6 +53,7 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
+        
     </header>
     <main class="container">
         <section class="promo-section">
