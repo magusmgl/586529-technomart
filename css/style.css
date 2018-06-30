@@ -57,12 +57,12 @@
                 padding-right: 54px;
             }
             
-            .header-logo img:focus,
-            .header-logo img:hover {
+            .inner-page.header-logo img:focus,
+            .inner-page.header-logo img:hover {
                 background-color: rgb(202, 44, 55);
             }
             
-            .header-logo img:active {
+            .inner-page.header-logo img:active {
                 background-color: rgb(186, 39, 50);
             }
             
@@ -1048,7 +1048,11 @@
                 margin-right: 0;
             }
             
-            .popular-items-list .product:nth-child(4n) .popular-items-list product:hover,
+            .popular-items-list .product:nth-child(4n) {
+                margin-right: 0;
+            }
+            
+            .popular-items-list product:hover,
             .catalog-list li:hover {
                 box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
             }
