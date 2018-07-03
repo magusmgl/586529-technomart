@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -28,29 +28,23 @@
                 </div>
             </div>
         </div>
-        <div class="info-wrapping">
-            <div class="container">
-                <div class="name-site">
-                    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-                </div>
-
-                <div class="header-contacts">
-                    <span class="phone">+7 (812) 555-05-55</span>
-                    <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                </div>
-
-
-                <ul class="user-sign-out">
-                    <li><a class="login-link" href="#">Войти</a></li>
-                    <li><a class="registration-link" href="#">Регистрация</a></li>
-                </ul>
+        <div class="info-wrapping container">
+            <div class="name-site">
+                <h1>Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
             </div>
+            <div class="header-contacts">
+                <span class="phone">+7 (812) 555-05-55</span>
+                <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            </div>
+            <ul class="user-sign-out">
+                <li><a class="login-link" href="#">Войти</a></li>
+                <li><a class="registration-link" href="#">Регистрация</a></li>
+            </ul>
         </div>
-
         <div class="container">
             <nav class="main-navigation">
                 <ul class="main navigation-site">
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
                     <li><a href="#">Компания</a></li>
                     <li><a href="inner.html">Каталог</a></li>
                     <li><a href="#">Новости</a></li>
@@ -66,7 +60,8 @@
         <div class="container">
             <section class="promo-section">
                 <h2 class="visually-hidden">Разделы каталога</h2>
-                <ul class="promo-list">
+
+                <ul class="promo-list wrapping-index-0">
                     <li class="promo-item">
                         <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
                         <h3>Материалы</h3>
@@ -80,14 +75,18 @@
                         <h3>Техника</h3>
                         <a class="button promo-button" href="#">Для стройки</a>
                     </li>
-                    <li class="promo-item">
-                        <h3>Скидка 50%</h3>
-                        <a class="button promo-button" href="#">на 350 товаром</a>
-                    </li>
-                    <li class="promo-item">
-                        <h3>Доставка</h3>
-                        <a class="button promo-button" href="#">Бесплатно</a>
-                    </li>
+                </ul>
+                <ul class="promo-list wrapping-index-1">
+                    <ul class="promo-list wrapping-index-2">
+                        <li class="promo-item">
+                            <h3>Скидка 50%</h3>
+                            <a class="button promo-button" href="#">на 350 товаров</a>
+                        </li>
+                        <li class="promo-item">
+                            <h3>Доставка</h3>
+                            <a class="button promo-button" href="#">Бесплатно</a>
+                        </li>
+                    </ul>
                     <li class="slider-item">
                         <p class="slider-sign">
                             <b>Перфортор</b><br>
@@ -99,7 +98,7 @@
                         <button type="button" class="button-next button-next-radio"><span class="visually-hidden">Вперед</span></button>
                         <a class="button common-button" href="inner.html">Открыть каталог</a>
                     </li>
-                    <li class="slider-item modal">
+                    <li class="slider-item">
                         <p class="slider-sign">
                             <b>Дрели</b><br>
                             <span>Соседям на радость!</span>
@@ -111,7 +110,6 @@
                         <a class="button common-button" href="inner.html">Открыть каталог</a>
                     </li>
                 </ul>
-
             </section>
             <section class="popular-items">
                 <div class="popular-index">
@@ -123,11 +121,13 @@
                         <div class="product-image">
                             <img src="img/snippet-32961-copy-3.jpg" width="180" height="103" alt="Перфортор BOSH BFG 9000">
                         </div>
-                        <div class="product-tittle">
-                            <h3>Перфортор BOSH BFG 9000</h3>
+                        <div class="card-content">
+                            <div class="product-tittle">
+                                <h3>Перфортор BOSH BFG 9000</h3>
+                            </div>
+                            <div class="product-price price-old">32500 Р.</div>
+                            <div class="product-price price-new">25500 Р.</div>
                         </div>
-                        <div class="product-price-old">32500 Р.</div>
-                        <div class="product-price-new">25500 Р.</div>
                         <div class="button-select">
                             <a class="product-button button-buy" href="#">Купить</a>
                             <a class="product-button button-bookmark" href="#">В закладки</a>
@@ -137,11 +137,13 @@
                         <div class="product-image">
                             <img src="img/snippet-18927-copy-3.jpg" width="127" height="112" alt="Перфортор BOSH BFG 3000">
                         </div>
-                        <div class="product-tittle">
-                            <h3>Перфортор BOSH BFG 3000</h3>
+                        <div class="card-content">
+                            <div class="product-tittle">
+                                <h3>Перфортор BOSH BFG 3000</h3>
+                            </div>
+                            <div class="product-price price-old">22500 Р.</div>
+                            <div class="product-price price-new">15500 Р.</div>
                         </div>
-                        <div class="product-price-old">22500 Р.</div>
-                        <div class="product-price-new">15500 Р.</div>
                         <div class="button-select">
                             <a class="product-button button-buy" href="#">Купить</a>
                             <a class="product-button button-bookmark" href="#">В закладки</a>
@@ -151,12 +153,14 @@
                         <div class="product-image">
                             <img src="img/snippet-945-copy-2.jpg" width="144" height="128" alt="Перфортор BOSH BFG 6000">
                         </div>
-                        <div class="product-tittle">
-                            <h3 class="product-tittle">Перфортор BOSH BFG 6000</h3>
-                        </div>
+                        <div class="card-content">
+                            <div class="product-tittle">
+                                <h3 class="product-tittle">Перфортор BOSH BFG 6000</h3>
+                            </div>
 
-                        <div class="product-price-old">30500 Р.</div>
-                        <div class="product-price-new">25500 Р.</div>
+                            <div class="product-price price-old">30500 Р.</div>
+                            <div class="product-price price-new">25500 Р.</div>
+                        </div>
                         <div class="button-select">
                             <a class="product-button button-buy" href="#">Купить</a>
                             <a class="product-button button-bookmark" href="#">В закладки</a>
@@ -167,12 +171,14 @@
                         <div class="product-image">
                             <img src="img/snippet-18927-copy-2.jpg" width="127" height="112" alt="Перфортор BOSH BFG 2000">
                         </div>
-                        <div class="product-tittle">
-                            <h3>Перфортор BOSH BFG 2000</h3>
-                        </div>
+                        <div class="card-content">
+                            <div class="product-tittle">
+                                <h3>Перфортор BOSH BFG 2000</h3>
+                            </div>
 
-                        <div class="product-price-old"></div>
-                        <div class="product-price-new"> 12500 Р.</div>
+                            <div class="product-price price-old"></div>
+                            <div class="product-price price-new"> 12500 Р.</div>
+                        </div>
                         <div class="button-select">
                             <a class="product-button button-buy" href="#">Купить</a>
                             <a class="product-button button-bookmark" href="#">В закладки</a>
@@ -352,29 +358,23 @@
         </div>
     </footer>
     <section class="modal modal-writeus">
-        <div class="form-wrapping">
-            <div class="form-container">
-                <h2 class="visually-hidden">Форма для обратной связи</h2>
-                <form action="https://echo.htmlacademy.ru" method="get" class="feedback-form">
-                    <div class="feedback-item-input">
-                        <label for="username">Ваше имя:</label>
-                        <input type="text" class="username" id="username" name="name" placeholder="Имя Фамилия" required>
-                    </div>
-                    <div class="feedback-item">
-                        <label for="email">Ваш e-mail</label>
-                        <input type="email" class="email" id="email" name="e-mail" placeholder="email@example.com" required>
-                    </div>
-                    <div class="feedback-item-textarea">
-                        <label for="letter">Текст письма</label>
-                        <textarea cols="68" rows="5" class="letter" id="letter" name="feedback" placeholder="В свободной форме" required></textarea>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="button-wrapping">
-            <div class="button-container">
-                <button type="submit" class="button-submit" form="">Отправить</button>
-            </div>
+        <div class="form-container">
+            <h2 class="visually-hidden">Форма для обратной связи</h2>
+            <form action="https://echo.htmlacademy.ru" method="get" class="feedback-form">
+                <div class="feedback-item-input">
+                    <label for="username">Ваше имя:</label>
+                    <input type="text" class="username" id="username" name="name" placeholder="Имя Фамилия" required>
+                </div>
+                <div class="feedback-item">
+                    <label for="email">Ваш e-mail</label>
+                    <input type="email" class="email" id="email" name="e-mail" placeholder="email@example.com" required>
+                </div>
+                <div class="feedback-item-textarea">
+                    <label for="letter">Текст письма</label>
+                    <textarea cols="68" rows="5" class="letter" id="letter" name="feedback" placeholder="В свободной форме" required></textarea>
+                </div>
+                <button type="submit" class="button-submit">Отправить</button>
+            </form>
         </div>
 
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
