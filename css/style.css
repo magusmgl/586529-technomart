@@ -54,25 +54,29 @@
                     top: 0;
                     left: 10px;
                     max-width: 220px;
-                    background-color: rgb(238, 54, 67);
-                    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+                    
                 }
-                
+.header-logo a {
+               display: block;
+               padding-left: 55px;
+               padding-top: 13px;
+               padding-bottom: 12px;
+               padding-right: 54px;
+               background-color: rgb(238, 54, 67);
+               box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+    
+}
                 .header-logo img {
                     width: 111px;
                     height: 18px;
-                    padding-left: 55px;
-                    padding-top: 13px;
-                    padding-bottom: 12px;
-                    padding-right: 54px;
-                }
+                                    }
                 
-                .inner-page.header-logo img:focus,
-                .inner-page.header-logo img:hover {
+               .inner-page .header-logo a:hover {
                     background-color: rgb(202, 44, 55);
                 }
                 
-                .inner-page.header-logo img:active {
+                .header-logo a:active {
                     background-color: rgb(186, 39, 50);
                 }
                 
@@ -85,7 +89,7 @@
                 }
                 
                 .inner-page .main-header {
-                    margin-bottom: 20px;
+                    margin-bottom: 21px;
                 }
                 
                 .promo-button {
@@ -536,17 +540,17 @@
                 
                 .user-sign-in li:first-child {
                     width: 250px;
-                    margin-right: 10px;
                 }
                 
                 .user-sign-in li:last-child {
                     width: 22px;
-                    margin-right: 10px;
+                    margin-right: 9px;
+                    align-self: center;
                 }
                 
                 .user-link {
                     position: relative;
-                    padding-top: 11px;
+                    padding-top: 12px;
                     padding-bottom: 12px;
                     padding-left: 46px;
                 }
@@ -566,7 +570,6 @@
                 .exit-link {
                     width: 21px;
                     height: 18px;
-                    padding-top: 13px;
                 }
                 
                 .exit-link svg {
@@ -685,6 +688,7 @@
                 
                 .about-product .container {
                     margin-bottom: 0;
+                    background-color: rgb(244, 247, 249);
                 }
                 
                 .breadcrumbs {
@@ -708,12 +712,16 @@
                 
                 .breadcrumbs a,
                 .breadcrumbs p {
-                    font-family: PTSans;
+                    font-family: PTSans, sans-serif;
                     font-size: 13px;
-                    text-transform: uppercase;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
                     line-height: 18px;
+                    letter-spacing: normal;
                     text-align: left;
                     color: rgb(0, 0, 0);
+                    text-transform: uppercase;
                 }
                 
                 .breadcrumbs p {
@@ -735,22 +743,26 @@
                     display: none;
                 }
                 
-                .wrapping-sort-list {
+                .wrapping-filter-list {
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    margin-bottom: 20px;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    width: 220px;
+                    box-sizing: border-box;
                 }
                 
                 .filter-index {
                     width: 220px;
+                    margin-bottom: 11px;
                 }
                 
                 .filter-index,
                 .sort-list {
                     background-color: rgb(247, 243, 236);
                 }
-                
+.sort-list {
+    margin-bottom: 20px;
+}
                 .catalog-index {
                     background-color: rgb(242, 246, 248);
                 }
@@ -758,30 +770,40 @@
                 .page-tittle {
                     margin: 0;
                     padding: 0;
-                    padding-left: 27px;
-                    padding-top: 30px;
-                    padding-bottom: 30px;
+                    padding-left: 28px;
+                    padding-top: 29px;
+                    padding-bottom: 29px;
                     margin-bottom: 20px;
                     font-size: 30px;
-                    font-family: Cuprum;
+                    font-family: Cuprum, sans-serif;
                     font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: normal;
                     line-height: 30px;
                     text-align: left;
                     text-transform: uppercase;
                     color: rgb(50, 66, 92);
+                    ;
                 }
                 
+.catalog-wrapping {
+    display: flex;
+    justify-content: space-between;
+}
+
                 .catalog-columns {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    margin-bottom: 32px;
+    width: 700px;
                 }
                 
                 .filters-list {
                     width: 222px;
                 }
-                
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
                 .sort-list {
                     display: flex;
                     flex-wrap: wrap;
@@ -792,20 +814,23 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    width: 302px;
+                    width: 365px;
                     list-style: none;
                     margin: 0;
                     padding: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-right: 35px;
                 }
                 
                 .filter-index h3,
                 .sort-list h3 {
                     margin: 0;
                     padding: 0;
-                    padding-left: 17px;
-                    padding-top: 9px;
-                    padding-right: 132px;
-                    font-family: PTSans;
+                    padding-left: 19px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-family: PTSans, sans-serif;
                     font-weight: normal;
                     font-size: 13px;
                     text-transform: uppercase;
@@ -816,34 +841,41 @@
                     color: rgb(0, 0, 0);
                 }
                 
+                .sort-list h3 {
+                    margin-right: 130px;
+                }
+                
                 .filter fieldset {
                     margin: 0;
                     padding: 0;
-                    margin-bottom: 10px;
+                    margin-bottom: 16px;
                     border: none;
                     border-bottom: 1px solid #c5c5c5;
                 }
                 
                 .filter fieldset:last-of-type {
                     border-bottom: 0;
-                    margin-bottom: 80px;
+                    margin-bottom: 61px;
                 }
                 
                 .filter legend {
-                    font-family: PTSans;
-                    font-size: 17px;
-                    font-weight: bold;
-                    font-style: normal;
-                    font-stretch: normal;
-                    text-transform: uppercase;
+                     font-family: PTSans, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  
+  letter-spacing: normal;
+  text-align: left;
                     line-height: 30px;
-                    text-align: left;
+                    
+                     text-transform: uppercase;
                 }
                 
                 .filter ul {
                     padding: 0;
                     margin: 0;
-                    font-family: PTSans;
+                    font-family: PTSans, sans-serif;
                     font-size: 15px;
                     font-weight: normal;
                     font-style: normal;
@@ -851,16 +883,21 @@
                     text-transform: uppercase;
                     line-height: 20px;
                     text-align: left;
-                    color: rgb(197, 197, 197);
+                    color: rgb(0, 0, 0);
                     list-style: none;
                 }
                 
                 .filter legend {
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
                 
                 .price-controls {
+                    margin:0;
+                    padding: 0;
                     margin-bottom: 26px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                 }
                 
                 .max-price label {
@@ -871,17 +908,18 @@
                     box-sizing: border-box;
                     width: 95px;
                     padding-left: 15px;
-                    padding-right: 15px;
-                    padding-top: 12px;
-                    padding-bottom: 12px;
+                    padding-right: 10px;
+                    padding-top: 9px;
+                    padding-bottom: 10px;
                     background-color: rgb(247, 243, 236);
                     border: none;
                     outline: none;
+                    text-align: center;
                 }
                 
                 .filter-option {
                     margin-bottom: 20px;
-                    padding-left: 35px;
+                    padding-left: 33px;
                 }
                 
                 .filter-option label {
@@ -892,7 +930,7 @@
                 }
                 
                 .range-wrapping {
-                    margin-bottom: 25px;
+                    margin-bottom: 9px;
                     padding-left: 20px;
                     padding-right: 20px;
                     padding-top: 39px;
@@ -940,30 +978,39 @@
                     content: "";
                     width: 23px;
                     height: 23px;
-                    top: 0;
-                    left: -31px;
+                    top: -2px;
+                    left: -33px;
                     background-image: url("../img/checkbox-off.svg");
                     background-position: 0 0;
                     background-repeat: no-repeat;
                 }
-                
+
+.filter-input-checkbox:hover+label::before {
+    background-image: url("../img/checkbox-off-focus.svg");
+}
+
                 .filter-input-checkbox:checked+label::before {
                     position: absolute;
                     content: "";
                     width: 27px;
                     height: 23px;
-                    top: 0px;
-                    left: -31px;
+                    top: -2px;
+                    left: -33px;
                     background-image: url("../img/checkbox-on.svg");
                 }
+
+.filter-input-checkbox:checked::hover+label::before {
+                 background-image: url("../img/checkbox-on-focus.svg");
+                }
+                
                 
                 .filter-input-radio+label::before {
                     position: absolute;
                     content: "";
                     width: 25px;
                     height: 25px;
-                    top: 0;
-                    left: -31px;
+                    top: -2px;
+                    left: -33px;
                     background-image: url("../img/radio-off.svg");
                     background-repeat: no-repeat;
                     background-position: 0 0;
@@ -973,34 +1020,60 @@
                     background-image: url("../img/radio-on.svg");
                 }
                 
+.filter-input-radio:hover+label::before {
+    background-image: url("../img/radio-off-focus.svg");
+}
+.filter-input-radio:checked:hover+label::before {
+    background-image: url("../img/radio-on-focus.svg") 
+}
+
                 .min-price,
                 .max-price {
-                    font-size: 17px;
-                    line-height: 18px;
-                    text-align: center;
+                    font-family: PTSans, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
+                    
                     color: rgb(0, 0, 0);
                     background-color: rgb(247, 243, 236);
                     border: none;
+                    width: 95px;
                 }
                 
                 .filter-button {
-                    font-size: 13px;
+                    font-family: PTSans, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
                     text-transform: uppercase;
-                    line-height: 18px;
-                    text-align: center;
                     color: rgb(0, 0, 0);
                     background-color: rgb(255, 255, 255);
                     border: solid 1px rgb(229, 229, 229);
+                    width: 140px;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    cursor: pointer;
+                    outline: none;
                 }
                 
                 .sort-item a {
-                    font-family: PTSans;
+                    font-family: PTSans, sans-serif;
                     font-size: 13px;
                     font-weight: normal;
                     font-style: normal;
                     font-stretch: normal;
-                    text-transform: uppercase;
+                    line-height: 18px;
+                    letter-spacing: normal;
                     text-align: left;
+                    text-transform: uppercase;
                     color: rgba(0, 0, 0, 0.3);
                     border-bottom: 1px dotted rgb(237, 53, 65);
                 }
@@ -1014,6 +1087,12 @@
                 .current-sort a {
                     color: rgb(238, 54, 67);
                     border: none;
+                }
+                
+                .sort-button {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-right: 17px;
                 }
                 
                 .sort-button svg {
@@ -1047,9 +1126,8 @@
                 
                 .pagination-item a {
                     display: block;
-                    padding-left: 17px;
-                    padding-top: 5px;
-                    font-family: PTSans;
+                    padding: 10px 15px;
+                    font-family: PTSans,sans-serif;
                     font-size: 13px;
                     font-weight: normal;
                     font-style: normal;
@@ -1059,6 +1137,7 @@
                     color: rgb(0, 0, 0);
                     background-color: rgb(255, 255, 255);
                     border: solid 1px rgb(229, 229, 229);
+                    border-radius: 3px;
                 }
                 
                 .pagination-item a:hover,
@@ -1070,7 +1149,7 @@
                     border: solid 1px rgb(238, 54, 67);
                 }
                 
-                .pagination-item-curent {
+                .pagination-item-curent   a{
                     color: rgb(255, 255, 255);
                     background-color: rgb(238, 54, 67);
                 }
@@ -1081,18 +1160,36 @@
                 }
                 
                 .about-product h2 {
+                    margin:0;
+                    padding:0;
+                    padding-top: 64px;
+                    padding-bottom: 26px;
+                        
+                    font-family: Cuprum, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
                     font-size: 30px;
                     line-height: 30px;
                     text-align: left;
                     text-transform: uppercase;
-                    color: rgb(50, 66, 92);
+                    color: rgb(0, 0, 0);
                 }
                 
                 .about-product p {
-                    font-size: 13px;
-                    line-height: 24px;
-                    letter-spacing: normal;
-                    text-align: left;
+                    padding:0;
+                    margin:0;
+                    padding-bottom: 69px;
+                    font-family: PTSans, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: left;
+                   
                     color: rgb(0, 0, 0);
                 }
                 
@@ -1358,6 +1455,8 @@
                 
                 .catalog {
                     width: 700px;
+                    display: flex;
+                    flex-direction: column;
                 }
                 
                 .popular-index .common-button {
@@ -1390,6 +1489,7 @@
                     list-style: none;
                     margin: 0;
                     padding: 0;
+                    margin-bottom: 32px;
                 }
                 
                 .popular-items-list .product,
