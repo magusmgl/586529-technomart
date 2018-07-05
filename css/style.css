@@ -112,7 +112,7 @@ html {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -140,7 +140,7 @@ html {
     border: none;
     background-color: rgb(238, 54, 67);
     border-radius: 3px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -149,6 +149,7 @@ html {
     letter-spacing: normal;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .common-button:hover,
@@ -184,7 +185,7 @@ html {
     margin: 0 auto;
     margin-bottom: 7px;
     border-radius: 3px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
@@ -290,7 +291,7 @@ html {
     justify-content: flex-end;
     margin-left: 220px;
     width: 720px;
-    font-family: Cuprum;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 17px;
     font-weight: normal;
     font-style: normal;
@@ -441,7 +442,7 @@ input[type="search"]:hover {
 }
 
 .name-site h1 {
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
@@ -480,7 +481,7 @@ input[type="search"]:hover {
     box-sizing: border-box;
     color: rgb(238, 54, 67);
     border: solid 3px rgb(255, 255, 255);
-    font-family: Cuprum;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 21px;
     font-weight: normal;
     font-style: normal;
@@ -504,7 +505,7 @@ input[type="search"]:hover {
 
 .header-contacts .address {
     color: rgb(50, 66, 92);
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -639,7 +640,7 @@ input[type="search"]:hover {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 230px;
+    width: 299px;
 }
 
 .user-control li:last-child {
@@ -655,7 +656,7 @@ input[type="search"]:hover {
 .user-sign-out a,
 .user-sign-in a {
     display: block;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 21px;
     font-weight: normal;
     font-style: normal;
@@ -711,7 +712,7 @@ input[type="search"]:hover {
     padding-left: 31px;
     padding-right: 31px;
     color: rgb(255, 255, 255);
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 17px;
     font-weight: normal;
     font-style: normal;
@@ -773,7 +774,7 @@ input[type="search"]:hover {
 
 .breadcrumbs a,
 .breadcrumbs p {
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -846,7 +847,7 @@ input[type="search"]:hover {
     padding-bottom: 29px;
     margin-bottom: 20px;
     font-size: 30px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -918,7 +919,7 @@ input[type="search"]:hover {
     padding-left: 19px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-weight: normal;
     font-size: 13px;
     text-transform: uppercase;
@@ -947,7 +948,7 @@ input[type="search"]:hover {
 }
 
 .filter legend {
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 17px;
     font-weight: bold;
     font-style: normal;
@@ -961,7 +962,7 @@ input[type="search"]:hover {
 .filter ul {
     padding: 0;
     margin: 0;
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
@@ -1126,7 +1127,7 @@ input[type="search"]:hover {
 
 .min-price,
 .max-price {
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 17px;
     font-weight: normal;
     font-style: normal;
@@ -1141,7 +1142,7 @@ input[type="search"]:hover {
 }
 
 .filter-button {
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -1161,7 +1162,7 @@ input[type="search"]:hover {
 }
 
 .sort-item a {
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -1226,7 +1227,7 @@ input[type="search"]:hover {
 .pagination-item a {
     display: block;
     padding: 10px 15px;
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -1263,7 +1264,7 @@ input[type="search"]:hover {
     padding: 0;
     padding-top: 64px;
     padding-bottom: 26px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -1278,8 +1279,8 @@ input[type="search"]:hover {
 .about-product p {
     padding: 0;
     margin: 0;
-    padding-bottom: 69px;
-    font-family: PTSans, sans-serif;
+    padding-bottom: 68px;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -1317,7 +1318,7 @@ input[type="search"]:hover {
     margin-top: 21px;
     margin-bottom: 12px;
     color: rgb(255, 255, 255);
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 24px;
     font-weight: bold;
     font-style: normal;
@@ -1422,8 +1423,10 @@ input[type="search"]:hover {
     color: rgb(255, 255, 255);
 }
 
-.slider-sign b {
-    font-family: Cuprum, sans-serif;
+.slider-sign h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 36px;
     font-weight: bold;
     font-style: normal;
@@ -1434,8 +1437,10 @@ input[type="search"]:hover {
     text-transform: uppercase;
 }
 
-.slider-sign span {
-    font-family: Cuprum, sans-serif;
+.slider-sign p {
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
@@ -1596,7 +1601,7 @@ input[type="search"]:hover {
     margin-left: 25px;
     margin-top: 31px;
     margin-bottom: 29px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 30px;
     font-weight: normal;
     font-style: normal;
@@ -1618,13 +1623,11 @@ input[type="search"]:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    
 }
 
 .catalog-list {
     margin-bottom: 30px;
 }
-
 
 .popular-items-list .product,
 .catalog-list .product {
@@ -1641,9 +1644,8 @@ input[type="search"]:hover {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 20px;
-    
     text-align: center;
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-weight: bold;
     background-color: rgb(255, 255, 255);
     border: solid 1px rgb(229, 229, 229);
@@ -1653,7 +1655,7 @@ input[type="search"]:hover {
 }
 
 .catalog-list .product {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .catalog-list .product:nth-child(3n) {
@@ -1694,7 +1696,7 @@ input[type="search"]:hover {
 .product h3 {
     color: rgb(0, 0, 0);
     min-height: 40px;
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
@@ -1707,7 +1709,7 @@ input[type="search"]:hover {
 }
 
 .product-price {
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 17px;
     font-weight: bold;
     font-style: normal;
@@ -1889,8 +1891,12 @@ input[type="search"]:hover {
     margin-bottom: 82px;
 }
 
+.service .container {
+    background-color: rgb(245, 248, 250);
+}
+
 .service-wrapper {
-    width: 435px;
+    width: 433px;
     padding-top: 65px;
     margin-bottom: 28px;
 }
@@ -1898,7 +1904,7 @@ input[type="search"]:hover {
 .service h2,
 .information h2 {
     margin: 0;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 30px;
     font-weight: normal;
     text-transform: uppercase;
@@ -1916,7 +1922,7 @@ input[type="search"]:hover {
     margin: 0;
     padding: 0;
     color: rgb(0, 0, 0);
-    font-family: PTSans, sans-serif;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -1924,6 +1930,10 @@ input[type="search"]:hover {
     line-height: 24px;
     letter-spacing: normal;
     text-align: left;
+}
+
+.service p {
+    margin-bottom: 28px;
 }
 
 .slider-service {
@@ -1951,15 +1961,11 @@ input[type="search"]:hover {
     padding-left: 80px;
 }
 
-.slider-list-info {
-    width: 379px;
-}
-
 .slider-list h3 {
     margin: 0;
     margin-bottom: 22px;
     margin-top: 41px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 36px;
     text-transform: uppercase;
     color: rgb(50, 66, 92);
@@ -1970,14 +1976,10 @@ input[type="search"]:hover {
     font-stretch: normal;
 }
 
-.slider-list p {
-    margin-bottom: 28px;
-}
-
 .slider-service .button-service {
     padding: 15px 0;
     padding-left: 22px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 21px;
     font-weight: bold;
     line-height: 30px;
@@ -2007,6 +2009,7 @@ input[type="search"]:hover {
     background-repeat: no-repeat;
     background-size: 468px 261px;
     background-position: 231px 66px;
+    padding-right: 323px;
 }
 
 .slider-list li:nth-child(2) {
@@ -2016,6 +2019,7 @@ input[type="search"]:hover {
     background-repeat: no-repeat;
     background-size: 389px 283px;
     background-position: 310px 0;
+    padding-right: 220px;
 }
 
 .slider-list li:nth-child(3) {
@@ -2025,6 +2029,7 @@ input[type="search"]:hover {
     background-repeat: no-repeat;
     background-size: 465px 285px;
     background-position: 228px 0px;
+    padding-right: 320px;
 }
 
 .slider-button {
@@ -2184,6 +2189,11 @@ input[type="search"]:hover {
     padding-top: 58px;
 }
 
+.footer-contacts p {
+    margin: 0;
+    padding: 0;
+}
+
 .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2219,7 +2229,7 @@ input[type="search"]:hover {
 .footer-up {
     width: 100%;
     margin-top: 86px;
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 18px;
     text-align: left;
     line-height: 24px;
@@ -2273,7 +2283,7 @@ input[type="search"]:hover {
 .footer-down {
     width: 100%;
     background-color: rgb(41, 52, 73);
-    font-family: Cuprum, sans-serif;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: rgb(255, 255, 255);
@@ -2285,6 +2295,11 @@ input[type="search"]:hover {
     margin: 0;
     margin-right: 162px;
     width: 227px;
+}
+
+.footer-down .footer-copyright p {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-social {
@@ -2468,7 +2483,7 @@ input[type="search"]:hover {
 .modal-writeus label {
     display: block;
     margin-bottom: 10px;
-    font-family: Cuprum;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 18px;
     color: rgb(0, 0, 0);
     line-height: 18px;
@@ -2483,7 +2498,7 @@ input[type="search"]:hover {
     padding-right: 16px;
     padding-bottom: 11px;
     padding-left: 16px;
-    font-family: PTSans;
+    font-family: "PT Sans", Verdana, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-align: left;
@@ -2544,10 +2559,10 @@ input[type="search"]:hover {
 
 .modal-putitem p {
     display: block;
-    width: 317px;
+    width: 530px;
     position: relative;
     padding-left: 179px;
-    font-family: Cuprum;
+    font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 30px;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -2574,4 +2589,5 @@ input[type="search"]:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     border: solid 1px rgb(229, 229, 229);
+    cursor: pointer;
 }
