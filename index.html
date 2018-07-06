@@ -63,23 +63,47 @@
                 <h2 class="visually-hidden">Разделы каталога</h2>
 
                 <ul class="promo-list wrapping-index-0">
-                    <li class="promo-item">
-                        <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
-                        <h3>Материалы</h3>
-                        <a class="button promo-button" href="#">На любой вкус</a>
+                    <li>
+                        <ul class="promo-list wrapping-index-1">
+                            <li class="promo-item">
+                                <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+                                <h3>Материалы</h3>
+                                <a class="button promo-button" href="#">На любой вкус</a>
+                            </li>
+                            <li class="promo-item">
+                                <h3>Инструмент</h3>
+                                <a class="button promo-button" href="#">На все случаи</a>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slider-sign">
+                                    <h3>Перфортор</h3>
+                                    <p>Настоящие мужские игрушки</p>
+                                </div>
+                                <button type="button" class="button-back button-back-arrow"><span class="visually-hidden">Назад</span></button>
+                                <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
+                                <button type="button" class="button-back button-back-radio curent-radio"><span class="visually-hidden">Назад</span></button>
+                                <button type="button" class="button-next button-next-radio"><span class="visually-hidden">Вперед</span></button>
+                                <a class="button common-button" href="inner.html">Открыть каталог</a>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slider-sign">
+                                    <h3>Дрели</h3>
+                                    <p>Соседям на радость!</p>
+                                </div>
+                                <button type="button" class="button-back button-back-arrow"><span class="visually-hidden">Назад</span></button>
+                                <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
+                                <button type="button" class="button-back button-back-radio"><span class="visually-hidden">Назад</span></button>
+                                <button type="button" class="button-next button-next-radio curent-radio"><span class="visually-hidden">Вперед</span></button>
+                                <a class="button common-button" href="inner.html">Открыть каталог</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="promo-item">
-                        <h3>Инструмент</h3>
-                        <a class="button promo-button" href="#">На все случаи</a>
-                    </li>
-                    <li class="promo-item">
-                        <h3>Техника</h3>
-                        <a class="button promo-button" href="#">Для стройки</a>
-                    </li>
-                </ul>
-                <ul class="promo-list wrapping-index-1">
                     <li>
                         <ul class="promo-list wrapping-index-2">
+                            <li class="promo-item">
+                                <h3>Техника</h3>
+                                <a class="button promo-button" href="#">Для стройки</a>
+                            </li>
                             <li class="promo-item">
                                 <h3>Скидка 50%</h3>
                                 <a class="button promo-button" href="#">на 350 товаров</a>
@@ -90,32 +114,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="slider-item">
-                        <div class="slider-sign">
-                            <h3>Перфортор</h3>
-                            <p>Настоящие мужские игрушки</p>
-                        </div>
-                        <button type="button" class="button-back button-back-arrow"><span class="visually-hidden">Назад</span></button>
-                        <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
-                        <button type="button" class="button-back button-back-radio"><span class="visually-hidden">Назад</span></button>
-                        <button type="button" class="button-next button-next-radio"><span class="visually-hidden">Вперед</span></button>
-                        <a class="button common-button" href="inner.html">Открыть каталог</a>
-                    </li>
-                    <li class="slider-item">
-                        <div class="slider-sign">
-                            <h3>Дрели</h3>
-                            <p>Соседям на радость!</p>
-                        </div>
-                        <button type="button" class="button-back button-back-arrow"><span class="visually-hidden">Назад</span></button>
-                        <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
-                        <button type="button" class="button-back button-back-radio"><span class="visually-hidden">Назад</span></button>
-                        <button type="button" class="button-next button-next-radio"><span class="visually-hidden">Вперед</span></button>
-                        <a class="button common-button" href="inner.html">Открыть каталог</a>
-                    </li>
                 </ul>
             </section>
             <section class="popular-items">
-                <div class="popular-index">
+                <h2 class="visually-hidden">Популярные товары:</h2>
+                <div class="popular-index index-product">
                     <h2>Популярные товары:</h2>
                     <a class="button common-button" href="#">Все популярные товары</a>
                 </div>
@@ -190,7 +193,8 @@
                 </ul>
             </section>
             <section class="popular-producers">
-                <div class="popular-index">
+                <h2 class="visually-hidden">Популярные производители:</h2>
+                <div class="popular-index index-producers">
                     <h2>Популярные производители:</h2>
                     <a class="button common-button" href="#">Все производители</a>
                 </div>
@@ -247,7 +251,7 @@
                 </div>
                 <div class="slider-service">
                     <div class="slider-button">
-                        <button type="button" class="button-service">Доставка</button>
+                        <button type="button" class="button-service active-button">Доставка</button>
                         <button type="button" class="button-service">Гарантия</button>
                         <button type="button" class="button-service">Кредит</button>
                     </div>
@@ -283,7 +287,8 @@
                 <div class="about-us">
                     <h2>КОМПАНИЯ «Техномарт»</h2>
                     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-                        <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортным компаниями:</p>
+                        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+                        <p>Техномарт работает со многими транспортным компаниями:</p>
                         <ul>
                             <li>Деловые линии</li>
                             <li>Автотрейдинг</li>

@@ -123,6 +123,10 @@ html {
     text-transform: uppercase;
 }
 
+.wrapping-index-2 .promo-button {
+    margin-left: 23px;
+}
+
 .promo-button:hover,
 .promo-button:focus {
     background-color: rgba(0, 0, 0, 0.2);
@@ -542,7 +546,7 @@ input[type="search"]:hover {
 .login-link {
     position: relative;
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     padding-left: 47px;
     width: 121px;
     -webkit-box-sizing: border-box;
@@ -554,8 +558,8 @@ input[type="search"]:hover {
     position: absolute;
     width: 21px;
     height: 18px;
-    top: 13px;
-    left: 13px;
+    top: 14px;
+    left: 14px;
     background-image: url("../img/icon-login.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -563,7 +567,7 @@ input[type="search"]:hover {
 
 .registration-link {
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     padding-left: 24px;
     width: 150px;
     -webkit-box-sizing: border-box;
@@ -1328,6 +1332,10 @@ input[type="search"]:hover {
     text-align: left;
 }
 
+wrapping-index-2 h3 {
+    margin-left: 23px;
+}
+
 .promo-list {
     list-style: none;
     margin: 0;
@@ -1337,50 +1345,50 @@ input[type="search"]:hover {
 .wrapping-index-0,
 .wrapping-index-1,
 .wrapping-index-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
+.wrapping-index-0>li:first-child {
+    margin-right: 20px;
+    width: 620px;
+}
+
+.wrapping-index-1 {
+    width: 620px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .wrapping-index-2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    /*! order: 2; */
 }
 
 .promo-item {
     position: relative;
     width: 300px;
-}
-
-.wrapping-index-0 .promo-item {
-    margin-right: 20px;
+    height: 123px;
     margin-bottom: 20px;
 }
 
-.wrapping-index-0 .promo-item:nth-child(3) {
-    margin-right: 0;
-}
-
-.wrapping-index-0 li:nth-child(1) {
+.wrapping-index-1 li:nth-child(1) {
     background-color: rgb(255, 191, 71);
     background-image: url("../img/icon-1.svg");
     background-size: 44px 65px;
     background-repeat: no-repeat;
     background-position: 213px 31px;
+    margin-right: 20px;
 }
 
-.wrapping-index-0 li:nth-child(2) {
+.wrapping-index-1 li:nth-child(2) {
     background-color: rgb(59, 188, 227);
     background-image: url("../img/icon-2.svg");
     background-size: 75px 61px;
     background-repeat: no-repeat;
-    background-position: 197px 33px
+    background-position: 197px 33px;
+    margin-right: 0;
 }
 
-.wrapping-index-0 li:nth-child(3) {
+.wrapping-index-2 li:nth-child(1) {
     background-color: rgb(220, 145, 216);
     background-image: url("../img/icon-3.svg");
     background-size: 78px 62px;
@@ -1388,21 +1396,21 @@ input[type="search"]:hover {
     background-position: 191px 31px;
 }
 
-.wrapping-index-2 li:nth-child(1) {
+.wrapping-index-2 li:nth-child(2) {
     background-color: rgb(142, 215, 143);
     background-image: url("../img/icon-4.svg");
     background-size: 59px 72px;
     background-repeat: no-repeat;
     background-position: 196px 26px;
-    margin-bottom: 20px;
 }
 
-.wrapping-index-2 li:nth-child(2) {
+.wrapping-index-2 li:nth-child(3) {
     background-color: rgb(255, 192, 71);
     background-image: url("../img/icon-5.svg");
     background-size: 78px 63px;
     background-repeat: no-repeat;
     background-position: 191px 32px;
+    margin-bottom: 0;
 }
 
 .slider-item {
@@ -1411,14 +1419,14 @@ input[type="search"]:hover {
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-right: 20px;
+    background-color: rgb(41, 52, 73);
 }
 
 .slider-sign {
     margin: 0;
     padding: 0;
     padding-top: 24px;
-    padding-left: 25px;
+    padding-left: 24px;
     text-align: left;
     color: rgb(255, 255, 255);
 }
@@ -1426,6 +1434,7 @@ input[type="search"]:hover {
 .slider-sign h3 {
     margin: 0;
     padding: 0;
+    margin-bottom: 2px;
     font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 36px;
     font-weight: bold;
@@ -1450,33 +1459,21 @@ input[type="search"]:hover {
     text-align: left;
 }
 
-.wrapping-index-1>li:first-child {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-}
-
-.wrapping-index-1 .slider-item:nth-of-type(2) {
+.wrapping-index-1 li:nth-of-type(3) {
     background-color: rgb(86, 86, 86);
     background-image: url("../img/promo_slaider1.jpg");
     background-size: 620px 266px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
 }
 
-.wrapping-index-1 .slider-item:nth-of-type(3) {
+.wrapping-index-1 li:nth-of-type(4) {
     display: none;
     background-color: rgb(86, 86, 86);
     background-image: url("../img/promo_slaider2.jpg");
     background-size: 620px 266px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
 }
 
 .popular-items {
@@ -1488,7 +1485,7 @@ input[type="search"]:hover {
     top: 207px;
     left: 25px;
     padding-left: 49px;
-    padding-right: 46px;
+    padding-right: 47px;
 }
 
 .button-back,
@@ -1556,8 +1553,7 @@ input[type="search"]:hover {
     background-color: rgb(255, 0, 0);
 }
 
-.button-back-radio:focus .button-back-radio::before,
-.button-next-radio:focus .button-next-radio::before {
+.curent-radio::before {
     display: block;
 }
 
@@ -1597,8 +1593,6 @@ input[type="search"]:hover {
 }
 
 .popular-index h2 {
-    margin: 0;
-    margin-left: 25px;
     margin-top: 31px;
     margin-bottom: 29px;
     font-family: Cuprum, "Segoe UI", sans-serif;
@@ -1611,6 +1605,14 @@ input[type="search"]:hover {
     text-align: left;
     text-transform: uppercase;
     color: rgb(50, 66, 92);
+}
+
+.index-product h2 {
+    margin-left: 28px;
+}
+
+.index-producers h2 {
+    margin-left: 24px;
 }
 
 .popular-items-list,
@@ -1683,7 +1685,7 @@ input[type="search"]:hover {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding-left: 29px;
+    padding-left: 16px;
     padding-right: 30px;
     padding-bottom: 20px;
     margin-top: auto;
@@ -1724,6 +1726,7 @@ input[type="search"]:hover {
     text-decoration: line-through;
     color: rgb(169, 169, 169);
     margin-bottom: 8px;
+    margin-left: 17px;
 }
 
 .price-new {
@@ -1732,11 +1735,11 @@ input[type="search"]:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(238, 54, 67);
     border-radius: 3px;
-    padding-top: 12px;
-    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 11px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-left: 12px;
+    margin-left: 26px;
 }
 
 .price-new::after {
@@ -1753,12 +1756,17 @@ input[type="search"]:hover {
 .product .flag,
 .promo-item .flag {
     position: absolute;
-    top: -1px;
-    right: -1px;
+    top: 0px;
+    right: 0px;
     width: 60px;
     height: 60px;
     overflow: hidden;
     z-index: 20;
+}
+
+.product .flag {
+    top: -1px;
+    right: -1px;
 }
 
 .product .flag-new,
@@ -1769,7 +1777,7 @@ input[type="search"]:hover {
 }
 
 .product .product-image {
-    margin-top: auto;
+    margin-top: 26px;
 }
 
 .popular-items-list .product:nth-child(1) .product-image {
@@ -1834,46 +1842,6 @@ input[type="search"]:hover {
     margin-right: 0;
 }
 
-.producers:nth-child(1) a {
-    width: 126;
-    height: 37;
-}
-
-.producers:nth-child(2) a {
-    width: 123;
-    height: 40;
-}
-
-.producers:nth-child(3) a {
-    width: 146;
-    height: 44;
-}
-
-.producers:nth-child(4) a {
-    width: 200;
-    height: 38;
-}
-
-.producers:nth-child(5) a {
-    width: 169;
-    height: 31;
-}
-
-.producers:nth-child(6) a {
-    width: 121;
-    height: 73;
-}
-
-.producers:nth-child(7) a {
-    width: 151;
-    height: 96;
-}
-
-.producers:nth-child(6) a {
-    width: 204;
-    height: 69;
-}
-
 .popular-producers-card li:hover {
     -webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -1896,7 +1864,7 @@ input[type="search"]:hover {
 }
 
 .service-wrapper {
-    width: 433px;
+    width: 417px;
     padding-top: 65px;
     margin-bottom: 28px;
 }
@@ -1963,7 +1931,7 @@ input[type="search"]:hover {
 
 .slider-list h3 {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     margin-top: 41px;
     font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 36px;
@@ -1977,7 +1945,8 @@ input[type="search"]:hover {
 }
 
 .slider-service .button-service {
-    padding: 15px 0;
+    padding-top: 12px;
+    padding-bottom: 17px;
     padding-left: 22px;
     font-family: Cuprum, "Segoe UI", sans-serif;
     font-size: 21px;
@@ -1990,14 +1959,15 @@ input[type="search"]:hover {
     background-color: rgb(50, 66, 92);
     border: none;
     outline: none;
+    margin-bottom: 1px
 }
 
 .slider-service .button-service:hover {
     background-color: rgb(41, 52, 73);
 }
 
-.slider-service .button-service:active,
-.slider-service .button-service:focus {
+.slider-service .active-button,
+.slider-service .active-button:hover {
     color: rgb(50, 66, 92);
     -webkit-box-shadow: 0 1px 0 rgb(255, 255, 255), inset 0 1px 0 rgb(255, 255, 255);
     box-shadow: 0 1px 0 rgb(255, 255, 255), inset 0 1px 0 rgb(255, 255, 255);
@@ -2008,8 +1978,8 @@ input[type="search"]:hover {
     background-image: url("../img/service_slider3.png");
     background-repeat: no-repeat;
     background-size: 468px 261px;
-    background-position: 231px 66px;
-    padding-right: 323px;
+    background-position: 231px 65px;
+    padding-right: 343px;
 }
 
 .slider-list li:nth-child(2) {
@@ -2085,11 +2055,14 @@ input[type="search"]:hover {
 
 .about-us h2,
 .contacts h2 {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 }
 
 .about-us p {
     margin-bottom: 22px;
+}
+.about-us p + p {
+    margin-bottom: 0
 }
 
 .contacts {
@@ -2129,7 +2102,8 @@ input[type="search"]:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+    margin-top: 22px;
 }
 
 .about-us li {
@@ -2187,6 +2161,7 @@ input[type="search"]:hover {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 58px;
+    padding-left: 2px;
 }
 
 .footer-contacts p {
@@ -2542,10 +2517,7 @@ input[type="search"]:hover {
 .modal-putitem {
     top: 50%;
     left: 50%;
-    margin-left: 310px;
     width: 620px;
-    bottom: 201px;
-    left: 50%;
     margin-left: -310px;
     -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75), inset 0px 7px 0 rgb(238, 54, 67);
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75), inset 0px 7px 0 rgb(238, 54, 67);
