@@ -65,7 +65,7 @@ html
             box-sizing: border-box;
 }
 
-.header-logo
+.header-logo-wrap
 {
     position: absolute;
     top: 0;
@@ -76,7 +76,7 @@ html
     max-width: 220px;
 }
 
-.header-logo a
+.header-logo-wrap a
 {
     display: block;
 
@@ -90,18 +90,18 @@ html
             box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.header-logo img
+.header-logo-wrap img
 {
     width: 111px;
     height: 18px;
 }
 
-.inner-page .header-logo a:hover
+.inner-page .header-logo-icon:hover
 {
     background-color: rgb(202, 44, 55);
 }
 
-.inner-page .header-logo a:active
+.inner-page .header-logo-icon:active
 {
     background-color: rgb(186, 39, 50);
 }
@@ -1813,6 +1813,8 @@ input[type="search"]:hover
 
 .promo-list
 {
+    position: relative;
+
     margin: 0;
     padding: 0;
 
@@ -1874,6 +1876,22 @@ input[type="search"]:hover
     background-repeat: no-repeat;
     background-position: 213px 31px;
     background-size: 44px 65px;
+}
+
+.wrapping-index-1 > li:nth-child(1)::after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+
+    content: "";
+
+    background-image: url("../img/new-flag.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .wrapping-index-1 > li:nth-child(2)
@@ -2235,6 +2253,8 @@ input[type="search"]:hover
 
 .catalog-list .product
 {
+    position: relative;
+
     margin-bottom: 20px;
 }
 
@@ -2243,7 +2263,7 @@ input[type="search"]:hover
     margin-right: 0;
 }
 
-.popular-items-list .product:nth-child(4n)
+.popular-items-list .product:nth-child(4)
 {
     margin-right: 0;
 }
@@ -2355,33 +2375,26 @@ input[type="search"]:hover
     border-left-color: #ee3643;
 }
 
-.product .flag,
-.promo-item .flag
+.catalog-list .product:nth-child(3)::after,
+.catalog-list .product:nth-child(5)::after,
+.catalog-list .product:nth-child(7)::after,
+.popular-items-list .product:nth-child(4)::after
 {
     position: absolute;
-    z-index: 20;
+    z-index: 30;
     top: 0;
     right: 0;
 
-    overflow: hidden;
-
     width: 60px;
     height: 60px;
-}
 
-.product .flag
-{
-    top: -1px;
-    right: -1px;
-}
+    content: "";
 
-.product .flag-new,
-.promo-item .flag-new
-{
     background-image: url("../img/new-flag.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
 
 .product-image
 {
@@ -2719,6 +2732,8 @@ input[type="search"]:hover
 .about-us p
 {
     margin-bottom: 25px;
+
+    letter-spacing: 0.1px;
 }
 
 .about-us p + p
@@ -3107,7 +3122,102 @@ input[type="search"]:hover
 .modal-show
 {
     display: block;
+
+    -webkit-animation-name: appearance;
+            animation-name: appearance;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
 }
+
+@-webkit-keyframes appearance
+{
+    0%
+    {
+        -webkit-transform: translateX(900px);
+                transform: translateX(900px);
+    }
+    33%
+    {
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+    }
+    66%
+    {
+        -webkit-transform: skewX(5deg);
+                transform: skewX(5deg);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+@keyframes appearance
+{
+    0%
+    {
+        -webkit-transform: translateX(900px);
+                transform: translateX(900px);
+    }
+    33%
+    {
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+    }
+    66%
+    {
+        -webkit-transform: skewX(5deg);
+                transform: skewX(5deg);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+.modal-error
+{
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-animation-duration: 0.1s;
+            animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 10;
+            animation-iteration-count: 10;
+}
+
+@-webkit-keyframes shake
+{
+    33%
+    {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    66%
+    {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes shake
+{
+    33%
+    {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+    66%
+    {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+
 
 .form-container
 {
@@ -3146,10 +3256,8 @@ input[type="search"]:hover
     left: 50%;
 
     width: 620px;
-
-    -webkit-transform: translate(-50%, 50%);
-        -ms-transform: translate(-50%, 50%);
-            transform: translate(-50%, 50%);
+    margin-bottom: -226px;
+    margin-left: -310px;
 
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255, 255, 255)), color-stop(74%, rgb(255, 255, 255)), color-stop(74%, rgb(244, 244, 244)), to(rgb(244, 244, 244)));
     background-image: -webkit-linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 74%, rgb(244, 244, 244) 74%, rgb(244, 244, 244) 100%);
@@ -3310,10 +3418,8 @@ input[type="search"]:hover
     left: 50%;
 
     width: 620px;
-
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    margin-top: -141px;
+    margin-left: -310px;
 
     -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), inset 0 7px 0 rgb(238, 54, 67);
             box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75), inset 0 7px 0 rgb(238, 54, 67);

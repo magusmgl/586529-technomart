@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -15,8 +16,8 @@
         <div class="control-wrapper">
             <div class="container">
                 <h1 class="visually-hidden">Магазин инструментов "Техномарт"</h1>
-                <div class="header-logo">
-                    <a>
+                <div class="header-logo-wrap">
+                    <a class="header-logo-icon">
                         <img src="img/logo-main.png" width="111" height="18" alt="Логотип магазина Техномарт">
                     </a>
                 </div>
@@ -68,7 +69,6 @@
                     <li>
                         <ul class="promo-list wrapping-index-1">
                             <li class="promo-item">
-                                <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
                                 <h3>Материалы</h3>
                                 <a class="button promo-button" href="#">На любой вкус</a>
                             </li>
@@ -97,7 +97,7 @@
                                         <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
                                         <button type="button" class="button-back button-back-radio curent-radio"><span class="visually-hidden">Назад</span></button>
                                         <button type="button" class="button-next button-next-radio "><span class="visually-hidden">Вперед</span></button>
-                                        
+
                                     </li>
                                 </ul>
 
@@ -179,7 +179,6 @@
                         </div>
                     </li>
                     <li class="product">
-                        <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
                         <div class="product-image">
                             <img src="img/snippet-189272.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                         </div>
@@ -379,15 +378,15 @@
             <form action="https://echo.htmlacademy.ru" method="get" class="feedback-form">
                 <div class="feedback-item-input">
                     <label for="username">Ваше имя:</label>
-                    <input type="text" class="username" id="username" name="name" placeholder="Имя Фамилия" required>
+                    <input type="text" class="username" id="username" name="name" placeholder="Имя Фамилия">
                 </div>
                 <div class="feedback-item">
                     <label for="email">Ваш e-mail</label>
-                    <input type="email" class="email" id="email" name="e-mail" placeholder="email@example.com" required>
+                    <input type="email" class="email" id="email" name="e-mail" placeholder="email@example.com">
                 </div>
                 <div class="feedback-item-textarea">
                     <label for="letter">Текст письма</label>
-                    <textarea cols="68" rows="5" class="letter" id="letter" name="feedback" placeholder="В свободной форме" required></textarea>
+                    <textarea cols="68" rows="5" class="letter" id="letter" name="feedback" placeholder="В свободной форме"></textarea>
                 </div>
                 <button type="submit" class="button-submit">Отправить</button>
             </form>

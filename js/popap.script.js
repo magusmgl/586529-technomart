@@ -22,38 +22,29 @@ button.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
 })
 
 form.addEventListener("submit", function(evt) {
     evt.defaultPrevented();
-    if (!name.value) {
+    if (!name.value || !email.value || !letter.value) {
         evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add(".modal-error");
     } else if (isStorageSupport) {
-        localStorage.setItem("name", name.value)
+        localStorage.setItem("name", name.value);
+        localStorage.setItem("email", email.value);
     }
 })
 
-form.addEventListener("submit", function(evt) {
-    evt.defaultPrevented();
-    if (!email.value) {
-        evt.preventDefault();
-    } else if (isStorageSupport) {
-        localStorage.setItem("email", email.value)
-    }
-})
-
-form.addEventListener("submit", function(evt) {
-    evt.defaultPrevented();
-    if (!letter.value) {
-        evt.preventDefault();
-    }
-})
 
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup.classList.contains("modal-show")) {
             popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
         }
     }
 });
@@ -82,14 +73,17 @@ window.addEventListener("keydown", function(evt) {
 });
 
 var cartPopup = document.querySelector(".modal-putitem");
-var buyButton = document.querySelector(".button-buy");
+var buyButton = document.querySelectorAll(".button-buy");
 var cartClose = cartPopup.querySelector(".modal-close");
 var returnButton = cartPopup.querySelector(".return-button");
 
-buyButton.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    cartPopup.classList.add("modal-show");
-})
+for (i = 0; i < buyButton.length; i++) {
+    buyButton[i].addEventListener("click", function(evt) {
+        evt.preventDefault();
+        cartPopup.classList.add("modal-show");
+    })
+
+}
 
 cartClose.addEventListener("click", function(evt) {
     evt.preventDefault();
