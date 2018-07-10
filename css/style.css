@@ -2777,6 +2777,7 @@ input[type="search"]:hover
     height: 158px;
 }
 
+
 .about-us .common-button
 {
     -ms-flex-item-align: start;
@@ -3185,8 +3186,8 @@ input[type="search"]:hover
             animation-name: shake;
     -webkit-animation-duration: 0.1s;
             animation-duration: 0.1s;
-    -webkit-animation-iteration-count: 10;
-            animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 5;
+            animation-iteration-count: 5;
 }
 
 @-webkit-keyframes shake
@@ -3410,6 +3411,11 @@ input[type="search"]:hover
     background-color: rgb(86, 86, 86);
     -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
             box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
+}
+
+.modal-map iframe
+{
+    border: none;
 }
 
 .modal-putitem

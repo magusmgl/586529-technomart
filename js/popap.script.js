@@ -1,3 +1,5 @@
+
+if (document.querySelector(".find-us")) {
 var button = document.querySelector(".find-us");
 var popup = document.querySelector(".modal-writeus");
 var close = popup.querySelector(".modal-close");
@@ -21,17 +23,18 @@ button.addEventListener("click", function(evt) {
 
 close.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
+    popup.classList.remove("modal-show");
+    
 })
 
 form.addEventListener("submit", function(evt) {
-    evt.defaultPrevented();
+    evt.preventDefault();
     if (!name.value || !email.value || !letter.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
         popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add(".modal-error");
+        popup.classList.add("modal-error");
     } else if (isStorageSupport) {
         localStorage.setItem("name", name.value);
         localStorage.setItem("email", email.value);
@@ -48,7 +51,8 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
-
+}
+if (document.querySelector(".button-map")) {
 var mapButton = document.querySelector(".button-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
@@ -71,6 +75,7 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
+}
 
 var cartPopup = document.querySelector(".modal-putitem");
 var buyButton = document.querySelectorAll(".button-buy");
@@ -91,7 +96,7 @@ cartClose.addEventListener("click", function(evt) {
 })
 
 returnButton.addEventListener("click", function(evt) {
-    evt.defaultPrevented();
+    evt.preventDefault();
     cartPopup.classList.remove("modal-show");
 })
 
