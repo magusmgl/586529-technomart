@@ -1476,8 +1476,8 @@ input[type="search"]:hover
     background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-input-checkbox:checked::hover + label::before,
-.filter-input-checkbox:checked::focus + label::before
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-checkbox:checked:focus + label::before
 {
     background-image: url("../img/checkbox-on-focus.svg");
 }
@@ -1615,6 +1615,8 @@ input[type="search"]:hover
     margin-right: 20px;
     padding-top: 9px;
     padding-bottom: 9px;
+
+    outline: none;
 }
 
 .sort-button:last-of-type
