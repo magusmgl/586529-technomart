@@ -1,17 +1,16 @@
-
 if (document.querySelector(".find-us")) {
-var button = document.querySelector(".find-us");
-var popup = document.querySelector(".modal-writeus");
-var close = popup.querySelector(".modal-close");
-var name = popup.querySelector(".username")
-var form = popup.querySelector(".feedback-form");
-var email = popup.querySelector(".email");
-var letter = popup.querySelector(".letter");
-var isStorageSupport = true;
-var storage = "";
+    var button = document.querySelector(".find-us");
+    var popup = document.querySelector(".modal-writeus");
+    var close = popup.querySelector(".modal-close");
+    var userName = popup.querySelector(".username");
+    var form = popup.querySelector(".feedback-form");
+    var email = popup.querySelector(".email");
+    var letter = popup.querySelector(".letter");
+    var isStorageSupport = true;
+    var storage = "";
 
 try {
-    storage = localStorage.getItem("name");
+    storage = localStorage.getItem("userName");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -29,14 +28,14 @@ close.addEventListener("click", function(evt) {
 })
 
 form.addEventListener("submit", function(evt) {
-    if (!name.value|| !email.value || !letter.value) {
+    if (!userName.value|| !email.value || !letter.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
         popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("modal-error");
     } else {
      if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
+        localStorage.setItem("userName", userName.value);
         localStorage.setItem("email", email.value);    
     }
 }
@@ -55,9 +54,9 @@ window.addEventListener("keydown", function(evt) {
 }
 
 if (document.querySelector(".button-map")) {
-var mapButton = document.querySelector(".button-map");
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+   var mapButton = document.querySelector(".button-map");
+   var mapPopup = document.querySelector(".modal-map");
+   var mapClose = mapPopup.querySelector(".modal-close");
 
 mapButton.addEventListener("click", function(evt) {
     evt.preventDefault();
