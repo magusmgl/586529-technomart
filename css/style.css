@@ -1456,7 +1456,10 @@ input[type="search"]:hover
     background-position: 0 0;
 }
 
-.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:hover + label::before
+{
+    background-image: url("../img/checkbox-off-hover.svg");
+}
 .filter-input-checkbox:focus + label::before
 {
     background-image: url("../img/checkbox-off-focus.svg");
@@ -1476,7 +1479,10 @@ input[type="search"]:hover
     background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-input-checkbox:checked:hover + label::before,
+.filter-input-checkbox:checked:hover + label::before
+{
+    background-image: url("../img/checkbox-on-hover.svg");
+}
 .filter-input-checkbox:checked:focus + label::before
 {
     background-image: url("../img/checkbox-on-focus.svg");
@@ -1523,13 +1529,19 @@ input[type="search"]:hover
     background-image: url("../img/radio-off-dis.svg");
 }
 
-.filter-input-radio:hover + label::before,
+.filter-input-radio:hover + label::before
+{
+    background-image: url("../img/radio-off-hover.svg");
+}
 .filter-input-radio:focus + label::before
 {
     background-image: url("../img/radio-off-focus.svg");
 }
 
-.filter-input-radio:checked:hover + label::before,
+.filter-input-radio:checked:hover + label::before
+{
+    background-image: url("../img/radio-on-hover.svg");
+}
 .filter-input-radio:checked:focus + label::before
 {
     background-image: url("../img/radio-on-focus.svg");
