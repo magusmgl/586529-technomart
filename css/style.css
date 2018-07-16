@@ -1946,6 +1946,119 @@ input[type="search"]:hover
     background-position: 191px 32px;
     background-size: 78px 63px;
 }
+/*  управлление сладером */
+.slider-item
+{
+    display: none;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 620px;
+    height: 266px;
+
+    background-color: rgb(41, 52, 73);
+}
+
+.slider-controls
+{
+    position: absolute;
+    z-index: 30;
+    bottom: 37px;
+    left: 292px;
+
+    width: 100px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-controls label
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+}
+
+.slider-controls label:after
+{
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 3px;
+
+    width: 10px;
+    height: 0;
+    height: 10px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.slider-promo  .slider-item:nth-of-type(1)
+{
+    background-color: rgb(86, 86, 86);
+    background-image: url("../img/promo_slaider2.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 620px 266px;
+}
+
+.slider-promo  .slider-item:nth-of-type(2)
+{
+    background-color: rgb(86, 86, 86);
+    background-image: url("../img/promo_slaider1.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 620px 266px;
+}
+
+
+#slide-1:checked ~ .slider-controls .slider-controls-item--1:before,
+#slide-2:checked ~ .slider-controls .slider-controls-item--2:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+
+    width: 6px;
+    height: 6px;
+    margin: -3px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+
+#slide-1:checked ~ .slider-promo  .slider-item:nth-child(1)
+{
+    display: block;
+}
+
+#slide-2:checked ~ .slider-promo  .slider-item:nth-child(2)
+{
+    display: block;
+}
+
+
+
+/* управление слайдером */
+
 
 .slider
 {
@@ -1960,15 +2073,7 @@ input[type="search"]:hover
     list-style: none;
 }
 
-.slider-item
-{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 620px;
-    height: 266px;
 
-    background-color: rgb(41, 52, 73);
-}
 
 .slider-sign
 {
@@ -2016,25 +2121,8 @@ input[type="search"]:hover
     letter-spacing: normal;
 }
 
-.slider-promo li:nth-of-type(1)
-{
-    background-color: rgb(86, 86, 86);
-    background-image: url("../img/promo_slaider2.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 620px 266px;
-}
 
-.slider-promo li:nth-of-type(2)
-{
-    display: none;
 
-    background-color: rgb(86, 86, 86);
-    background-image: url("../img/promo_slaider1.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 620px 266px;
-}
 
 .popular-items
 {
@@ -2094,27 +2182,10 @@ input[type="search"]:hover
     background-position: 0 0;
 }
 
-.button-back-radio,
-.button-next-radio
-{
-    width: 10px;
-    height: 10px;
 
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-}
 
-.button-back-radio
-{
-    top: 220px;
-    left: 295px;
-}
 
-.button-next-radio
-{
-    top: 220px;
-    left: 315px;
-}
+
 
 .button-back-radio::before,
 .button-next-radio::before
@@ -2122,8 +2193,6 @@ input[type="search"]:hover
     position: absolute;
     top: 2px;
     left: 2px;
-
-    display: none;
 
     width: 6px;
     height: 6px;
@@ -2572,6 +2641,8 @@ input[type="search"]:hover
 
 .slider-list li
 {
+    display: none;
+
     padding-bottom: 100px;
     padding-left: 80px;
 }
@@ -2595,7 +2666,7 @@ input[type="search"]:hover
     color: rgb(50, 66, 92);
 }
 
-.slider-service .button-service
+.slider-service label
 {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 21px;
@@ -2617,13 +2688,15 @@ input[type="search"]:hover
             box-shadow: 0 1px 0 rgb(41, 52, 73), inset 0 1px 0 rgb(64, 80, 105);
 }
 
-.slider-service .button-service:hover
+.slider-service label:hover
 {
     background-color: rgb(41, 52, 73);
 }
 
-.slider-service .active-button,
-.slider-service .active-button:hover
+
+#service-1:checked ~ .slider-button .service-control-item--1,
+#service-2:checked ~ .slider-button .service-control-item--2,
+#service-3:checked ~ .slider-button .service-control-item--3
 {
     color: rgb(50, 66, 92);
     background-color: rgb(255, 255, 255);
@@ -2631,7 +2704,23 @@ input[type="search"]:hover
             box-shadow: 0 1px 0 rgb(255, 255, 255), inset 0 1px 0 rgb(255, 255, 255);
 }
 
-.slider-list li:nth-child(1)
+
+#service-1:checked ~ .slider-list .slider-list-info:nth-child(1)
+{
+    display: block;
+}
+
+#service-2:checked ~ .slider-list .slider-list-info:nth-child(2)
+{
+    display: block;
+}
+
+#service-3:checked ~ .slider-list .slider-list-info:nth-child(3)
+{
+    display: block;
+}
+
+.slider-list .slider-list-info:nth-child(1)
 {
     padding-right: 343px;
 
@@ -2642,7 +2731,7 @@ input[type="search"]:hover
     background-size: 468px 261px;
 }
 
-.slider-list li:nth-child(2)
+.slider-list .slider-list-info:nth-child(2)
 {
     display: none;
 
@@ -2656,7 +2745,7 @@ input[type="search"]:hover
     background-size: 389px 283px;
 }
 
-.slider-list li:nth-child(3)
+.slider-list .slider-list-info:nth-child(3)
 {
     display: none;
 
@@ -2669,6 +2758,8 @@ input[type="search"]:hover
     background-position: 228px 0;
     background-size: 465px 285px;
 }
+
+
 
 .slider-button
 {

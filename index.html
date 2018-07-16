@@ -77,6 +77,14 @@
                                 <a class="button promo-button" href="#">На все случаи</a>
                             </li>
                             <li class="slider">
+                                <input type="radio" name="toggle" class="visually-hidden" id="slide-1" checked>
+                                <input type="radio" name="toggle" class="visually-hidden" id="slide-2">
+                                <button type="button" class="button-back button-back-arrow"><span class="visually-hidden">Назад</span></button>
+                                <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
+                                <div class="slider-controls">                                            
+                                  <label class="slider-controls-item slider-controls-item--1" for="slide-1"><span class="visually-hidden">Назад</span></label>
+                                  <label class="slider-controls-item slider-controls-item--2" for="slide-2"><span class="visually-hidden">Вперед</span></label>
+                                </div>
                                 <ul class="slider-promo">
                                     <li class="slider-item">
                                         <div class="slider-sign">
@@ -92,16 +100,10 @@
                                             <a class="button common-button" href="inner.html">Открыть каталог</a>
                                         </div>
                                     </li>
-                                    <li>
-                                        <button type="button" class="button-back button-back-arrow"><span class="visually-hidden">Назад</span></button>
-                                        <button type="button" class="button-next button-next-arrow"><span class="visually-hidden">Вперед</span></button>
-                                        <button type="button" class="button-back button-back-radio curent-radio"><span class="visually-hidden">Назад</span></button>
-                                        <button type="button" class="button-next button-next-radio "><span class="visually-hidden">Вперед</span></button>
-
-                                    </li>
+                                    
                                 </ul>
-
                             </li>
+
                         </ul>
                     </li>
                     <li>
@@ -255,32 +257,29 @@
                     <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 </div>
                 <div class="slider-service">
+                    <input type="radio" name="service-toggle" class="visually-hidden" id="service-1" checked>
+                    <input type="radio" name="service-toggle" class="visually-hidden" id="service-2">
+                    <input type="radio" name="service-toggle" class="visually-hidden" id="service-3">
                     <div class="slider-button">
-                        <button type="button" class="button-service active-button">Доставка</button>
-                        <button type="button" class="button-service">Гарантия</button>
-                        <button type="button" class="button-service">Кредит</button>
+                      <label for="service-1" class="service-control-item service-control-item--1">Доставка</label>
+                      <label for="service-2" class="service-control-item service-control-item--2">Гарантия</label>
+                      <label for="service-3" class="service-control-item service-control-item--3">Кредит</label>
                     </div>
                     <ul class="slider-list">
-                        <li>
-                            <div class="slider-list-info">
+                        <li class="slider-list-info">
                                 <h3>Доставка</h3>
                                 <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-                            </div>
                         </li>
-                        <li>
-                            <div class="slider-list-info">
+                        <li class="slider-list-info">
                                 <h3>Гарантия</h3>
                                 <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>Дом уж восстановите
                                     как-нибудь сами.
                                 </p>
-                            </div>
                         </li>
-                        <li>
-                            <div class="slider-list-info">
+                        <li class="slider-list-info">
                                 <h3>Кредит</h3>
                                 <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
                                 <button type="button" class="button-submit">Отправить заявку</button>
-                            </div>
                         </li>
                     </ul>
                 </div>
